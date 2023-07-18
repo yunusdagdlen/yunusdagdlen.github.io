@@ -1,0 +1,142 @@
+.Screen {
+  background: aliceblue;
+  display: flex;
+  height: 1080px;
+  height: 880px;
+  border-radius: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/backgroud.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-taskbar {
+    width: 100%;
+    height: 70px;
+    background: $taskbar-blue;
+    margin-bottom: -1;
+    margin-top: auto;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    display: flex;
+    z-index: 20;
+    
+    &-buttons-start {
+      display: flex;
+      height: 70px;
+      border-bottom-left-radius: 36px;
+      background: $button-blue;
+      box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+
+      &-text {
+        display: inline-flex;
+        margin-left: 10px;
+        font-size: 20px;
+        align-items: center;
+      }
+      &:hover{
+        background: $hover-color;
+      }
+    }
+    
+
+    &-buttons-about {
+
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 210px;
+      height: $button-heigth;
+      border-radius: 10px;
+      background: $button-blue;
+      box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+      margin-left: $gutter;
+      display: flex;
+      cursor: pointer;
+
+      &-icon {
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 40px;
+        height: 39px;
+      }
+
+      &-text {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background: $hover-color;
+      }
+    }
+
+    &-buttons-project {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 220px;
+      height: $button-heigth;
+      border-radius: 10px;
+      background: $button-blue;
+      box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+      margin-left: $gutter;
+      color: $white;
+      align-items: center;
+
+      &:hover {
+        background: $hover-color;
+      }
+    }
+
+    &-buttons-contact {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 200px;
+      height: $button-heigth;
+      border-radius: 10px;
+      background: $button-blue;
+      box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+      margin-left: $gutter;
+      color: $white;
+      align-items: center;
+
+      &:hover {
+        background: $hover-color;
+      }
+    }
+
+
+    &-buttons-date {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 0;
+      margin-left: auto;
+      padding-top: 12px;
+      width: 240px;
+      height: 70px;
+      border-bottom-right-radius: 36px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      box-shadow: -11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+      background: $button-blue;
+
+      &-clock {
+        display: flex;
+        margin-left: -100%;
+        transform: translateX(55%);
+        margin-right: auto;
+        color: $white;
+        font-size: 20px;
+        font-family: $font;
+        letter-spacing: 4px;
+      }
+    }
+
+  }
+}

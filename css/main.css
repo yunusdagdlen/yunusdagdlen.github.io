@@ -1,0 +1,1095 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"); /*! formalize.css | MIT License | github.com/interacthings/formalize */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre, fieldset, ul, ol, menu, form {
+  margin: 0;
+}
+
+button, fieldset, iframe {
+  border: 0;
+}
+
+fieldset, ul, ol, button, menu {
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Press Start 2P", cursive;
+  background-color: #E1CDBF;
+}
+
+.Frame {
+  padding: 30px;
+  background: #E1CDBF;
+  width: 100%;
+  height: 1000px;
+}
+
+.power-icon {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  fill: rgb(255, 255, 255);
+  width: 39px;
+  height: 40px;
+}
+.power-icon-fill {
+  fill: white;
+}
+
+.try {
+  background-color: pink;
+  border: 3px solid black;
+  width: 15px;
+  height: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Screen {
+  background: aliceblue;
+  display: flex;
+  height: 1080px;
+  height: 880px;
+  border-radius: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/backgroud.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Screen-taskbar {
+  width: 100%;
+  height: 70px;
+  background: rgba(43, 80, 106, 0.9);
+  margin-bottom: -1;
+  margin-top: auto;
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  display: flex;
+  z-index: 20;
+}
+.Screen-taskbar-buttons-start {
+  display: flex;
+  height: 70px;
+  border-bottom-left-radius: 36px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.Screen-taskbar-buttons-start-text {
+  display: inline-flex;
+  margin-left: 10px;
+  font-size: 20px;
+  align-items: center;
+}
+.Screen-taskbar-buttons-start:hover {
+  background: rgba(26, 125, 187, 0.95);
+}
+.Screen-taskbar-buttons-about {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 210px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+  display: flex;
+  cursor: pointer;
+}
+.Screen-taskbar-buttons-about-icon {
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40px;
+  height: 39px;
+}
+.Screen-taskbar-buttons-about-text {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.Screen-taskbar-buttons-about:hover {
+  background: rgba(26, 125, 187, 0.95);
+}
+.Screen-taskbar-buttons-project {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+.Screen-taskbar-buttons-project:hover {
+  background: rgba(26, 125, 187, 0.95);
+}
+.Screen-taskbar-buttons-contact {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+.Screen-taskbar-buttons-contact:hover {
+  background: rgba(26, 125, 187, 0.95);
+}
+.Screen-taskbar-buttons-date {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 12px;
+  width: 240px;
+  height: 70px;
+  border-bottom-right-radius: 36px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: -11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  background: rgb(78, 100, 144);
+}
+.Screen-taskbar-buttons-date-clock {
+  display: flex;
+  margin-left: -100%;
+  transform: translateX(55%);
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
+  letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 1620px) {
+  #aboutDiv {
+    width: 800px;
+    overflow-y: auto;
+  }
+  #ProjectDiv {
+    width: 800px;
+  }
+  #ProjectDiv-Sidebar {
+    width: 300px;
+  }
+  #aboutDivHeader {
+    border-top-right-radius: 0px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  #aboutDiv {
+    width: 1920px;
+    overflow-y: auto;
+  }
+  #ProjectDiv {
+    width: 1920px;
+    height: 1000px;
+  }
+  #ProjectDiv-Sidebar {
+    width: 700px;
+    height: 96%;
+  }
+  #aboutDivHeader {
+    border-top-right-radius: 0px;
+  }
+  #Project-Content {
+    position: relative;
+    left: 400px;
+  }
+  #Trash {
+    position: relative;
+    left: 400px;
+  }
+  #postit {
+    position: absolute;
+    left: 750px;
+  }
+  #Screen {
+    width: 2500px;
+    height: 1224px;
+  }
+  .Screen {
+    margin-top: 0.2vh;
+  }
+}
+.Tab-about {
+  display: flex;
+  background: rgb(239, 233, 228);
+  width: 1220px;
+  height: 680px;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid rgba(43, 80, 106, 0.9);
+  visibility: hidden;
+  /**/
+}
+.Tab-about-header {
+  display: flex;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 100%;
+  top: 0px;
+  height: 40px;
+  z-index: 20;
+  background: rgba(50, 50, 50, 0.76);
+  position: absolute;
+}
+.Tab-about-header-tab {
+  display: inline-flex;
+  position: absolute;
+  width: 172px;
+  height: 33px;
+  top: 7px;
+  left: 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: rgba(50, 50, 50, 0.8);
+}
+.Tab-about-header-tab-text {
+  font-family: "Press Start 2P", cursive;
+  color: rgb(255, 255, 255);
+  margin: auto;
+}
+.Tab-about-header-button {
+  position: absolute;
+  border-radius: 5px;
+  background: red;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  top: 5px;
+  right: 15px;
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: auto;
+  width: 29px;
+  height: 29px;
+}
+.Tab-about-header-button-icon {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23px;
+  height: 27px;
+  cursor: pointer;
+}
+.Tab-about-header-button:hover {
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+.Tab-about-main-content {
+  margin-top: 40px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100%;
+  height: 637px;
+  display: inline-flex;
+}
+.Tab-about-main-content-profilePhoto {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  height: 188px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: pink;
+}
+.Tab-about-main-content-skills {
+  padding: 10px;
+  position: absolute;
+  border-radius: 15px;
+  top: 300px;
+  left: 50px;
+  background-color: rgba(220, 220, 220, 0.2);
+  height: auto;
+  width: 188px;
+}
+.Tab-about-main-content-content {
+  z-index: 2;
+  font-family: "Press Start 2P", cursive;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+.Tab-about-main-content-content p {
+  position: relative;
+  top: 20px;
+}
+
+.Tab-Projects {
+  display: flex;
+  background: rgb(239, 233, 228);
+  width: 1220px;
+  height: 680px;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid rgba(43, 80, 106, 0.9);
+  visibility: hidden;
+}
+.Tab-Projects-header {
+  display: flex;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 100%;
+  top: 0px;
+  height: 40px;
+  z-index: 20;
+  background: rgba(50, 50, 50, 0.76);
+}
+.Tab-Projects-header-textbox {
+  display: inline-flex;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+}
+.Tab-Projects-header-textbox-text {
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-top: 4px;
+}
+.Tab-Projects-header-button {
+  position: absolute;
+  border-radius: 5px;
+  background: red;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  top: 5px;
+  right: 15px;
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: auto;
+  width: 29px;
+  height: 29px;
+}
+.Tab-Projects-header-button-icon {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23px;
+  height: 27px;
+  cursor: pointer;
+}
+.Tab-Projects-header-button:hover {
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+.Tab-Projects-Sidebar {
+  float: left;
+  background-color: rgb(255, 243, 199);
+  height: 100%;
+  height: 94.1%;
+  width: 26%;
+  z-index: -1;
+  margin-top: 40px;
+  position: absolute;
+  border-bottom-left-radius: 14px;
+  padding-top: 10px;
+}
+.Tab-Projects-Sidebar-buttons {
+  font-family: "Press Start 2P", cursive;
+  align-items: center;
+  margin: 10px;
+  margin-left: 50px;
+}
+.Tab-Projects-Sidebar-main-buttons {
+  font-family: "Press Start 2P", cursive;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: auto;
+  height: auto;
+}
+.Tab-Projects-Sidebar-main-buttons:hover {
+  background-color: rgba(255, 228, 137, 0.8);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.Tab-Projects-Sidebar-main-buttons img {
+  margin-left: 10px;
+}
+.Tab-Projects-Sidebar-main-buttons-caret {
+  width: 2px;
+  height: 2px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid gray;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: auto;
+  float: right;
+  vertical-align: middle;
+  margin-right: 40px;
+}
+.Tab-Projects-Sidebar ul li {
+  margin: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.Tab-Projects-Sidebar ul li a {
+  text-decoration: none;
+  color: black;
+}
+.Tab-Projects-Sidebar ul li:hover {
+  background-color: rgba(255, 228, 137, 0.8);
+  border-radius: 15px;
+}
+.Tab-Projects-Sidebar ul li img {
+  margin-right: 10px;
+}
+.Tab-Projects-Sidebar span span {
+  margin-left: 10px;
+}
+.Tab-Projects-Trash-item_one {
+  position: absolute;
+  left: 350px;
+  top: 70px;
+  cursor: pointer;
+}
+.Tab-Projects-Trash-item_one img {
+  width: 70px;
+  height: 70px;
+}
+.Tab-Projects-Trash-item_one span {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+}
+.Tab-Projects-Trash-item_two {
+  position: absolute;
+  left: 480px;
+  top: 70px;
+  cursor: pointer;
+}
+.Tab-Projects-Trash-item_two img {
+  width: 70px;
+  height: 70px;
+}
+.Tab-Projects-Trash-item_two span {
+  position: absolute;
+  top: 90px;
+  left: -20px;
+}
+.Tab-Projects-project-item_one {
+  position: absolute;
+  left: 350px;
+  top: 70px;
+}
+.Tab-Projects-project-item_one img {
+  width: 70px;
+  height: 70px;
+}
+.Tab-Projects-project-item_one span {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+.Tab-Projects-project-item_two {
+  position: absolute;
+  left: 480px;
+  top: 70px;
+}
+.Tab-Projects-project-item_two img {
+  width: 70px;
+  height: 70px;
+}
+.Tab-Projects-project-item_two span {
+  position: absolute;
+  top: 90px;
+  left: 0px;
+}
+.Tab-Projects-postit {
+  position: relative;
+  top: 80px;
+  left: 376.5px;
+  right: 50px;
+  border-radius: 15px;
+}
+.Tab-Projects-postit-form {
+  position: relative;
+  top: 800px;
+  left: 1077.5px;
+}
+.Tab-Projects-postit-form-info {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+.Tab-Projects-postit-form-info:hover {
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+.Tab-contact {
+  display: flex;
+  background: rgb(239, 233, 228);
+  width: 581px;
+  height: 680px;
+  position: absolute;
+  left: 60%;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid rgba(43, 80, 106, 0.9);
+  visibility: hidden;
+}
+.Tab-contact-header {
+  display: flex;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 100%;
+  top: 0px;
+  height: 40px;
+  z-index: 20;
+  background: rgba(50, 50, 50, 0.76);
+  position: absolute;
+}
+.Tab-contact-header-textbox {
+  display: inline-flex;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+}
+.Tab-contact-header-textbox-text {
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-top: 4px;
+}
+.Tab-contact-header-tab {
+  display: inline-flex;
+  position: absolute;
+  width: 172px;
+  height: 33px;
+  top: 7px;
+  left: 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: rgba(50, 50, 50, 0.8);
+}
+.Tab-contact-header-tab-text {
+  font-family: "Press Start 2P", cursive;
+  color: rgb(255, 255, 255);
+  margin: auto;
+}
+.Tab-contact-header-button {
+  position: absolute;
+  border-radius: 5px;
+  background: red;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  top: 5px;
+  right: 15px;
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: auto;
+  width: 29px;
+  height: 29px;
+}
+.Tab-contact-header-button-icon {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23px;
+  height: 27px;
+  cursor: pointer;
+}
+.Tab-contact-header-button:hover {
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+.Tab-contact-content {
+  position: absolute;
+  top: 40px;
+  align-items: center;
+  padding: 120px;
+}
+.Tab-contact-content input {
+  margin-top: 5px;
+  height: 30px;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.Tab-contact-content textarea {
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 0px overflow;
+}
+.Tab-contact-content button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  width: 200px;
+  height: 60px;
+}
+
+/*# sourceMappingURL=main.css.map */

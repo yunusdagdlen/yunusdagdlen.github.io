@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Who is am</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body onload="showTime()">
+<div class="Frame">
+    <div class="Screen" id="Screen">
+        <!--Contact-->
+        <div class="Tab-contact" id="contactDiv" hidden onclick="up('contactDiv')">
+            <div class="Tab-contact-header" id="conctactDivHeader" hidden>
+                <button class="Tab-contact-header-button" onclick="hideContact()">
+                    <svg class="Tab-contact-header-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+                    </svg>
+                </button>
+            </div>
+        <div class="Tab-contact-content">
+            <center>
+            <form   action="https://formspree.io/f/xpzgwqzz"
+            method="POST">
+            <center>
+            <label>E-Mail:<br>
+            <input type="email" name="email">
+            </label>
+                </center>
+                <center>
+                    <label>
+                        Your message:<br>
+                        <textarea name="message"></textarea>
+                    </label>
+                </center>
+                <button type="submit">Send</button>
+            </form>
+        </center>
+        </div>
+        <div class="Tab-contact-header-textbox">
+            <p class="Tab-contact-header-textbox-text">Contact Me</p>
+        </div>
+        </div>
+
+
+        <!--About-tab -->
+        <div class="Tab-about" id="aboutDiv" hidden onclick="up('aboutDiv')">
+            <div class="Tab-about-header" id="aboutDivHeader" hidden>
+                <button class="Tab-about-header-button" onclick="hideAbout()">
+                    <svg class="Tab-about-header-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+                    </svg>
+                </button>
+                <div class="Tab-about-header-tab">
+                    <p class="Tab-about-header-tab-text">About Me</p>
+                </div>
+            </div>
+            <div class="Tab-about-main-content">
+                <div class="Tab-about-main-content-profilePhoto">
+                    <img src="https://cdn.7tv.app/emote/604097c3cf6746000db10344/4x.webp" alt="">
+                </div>
+                <div class="Tab-about-main-content-skills">
+                    <center><H4>Skills</H4></center>
+                    <center>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="svg"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>                    
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512"><path d="M14 95.7924C14 42.8877 56.8878 0 109.793 0H274.161C327.066 0 369.954 42.8877 369.954 95.7924C369.954 129.292 352.758 158.776 326.711 175.897C352.758 193.019 369.954 222.502 369.954 256.002C369.954 308.907 327.066 351.795 274.161 351.795H272.081C247.279 351.795 224.678 342.369 207.666 326.904V415.167C207.666 468.777 163.657 512 110.309 512C57.5361 512 14 469.243 14 416.207C14 382.709 31.1945 353.227 57.2392 336.105C31.1945 318.983 14 289.5 14 256.002C14 222.502 31.196 193.019 57.2425 175.897C31.196 158.776 14 129.292 14 95.7924ZM176.288 191.587H109.793C74.2172 191.587 45.3778 220.427 45.3778 256.002C45.3778 291.44 73.9948 320.194 109.381 320.416C109.518 320.415 109.655 320.415 109.793 320.415H176.288V191.587ZM207.666 256.002C207.666 291.577 236.505 320.417 272.081 320.417H274.161C309.737 320.417 338.576 291.577 338.576 256.002C338.576 220.427 309.737 191.587 274.161 191.587H272.081C236.505 191.587 207.666 220.427 207.666 256.002ZM109.793 351.795C109.655 351.795 109.518 351.794 109.381 351.794C73.9948 352.015 45.3778 380.769 45.3778 416.207C45.3778 451.652 74.6025 480.622 110.309 480.622C146.591 480.622 176.288 451.186 176.288 415.167V351.795H109.793ZM109.793 31.3778C74.2172 31.3778 45.3778 60.2173 45.3778 95.7924C45.3778 131.368 74.2172 160.207 109.793 160.207H176.288V31.3778H109.793ZM207.666 160.207H274.161C309.737 160.207 338.576 131.368 338.576 95.7924C338.576 60.2173 309.737 31.3778 274.161 31.3778H207.666V160.207Z"/></svg>
+                    </center>
+                </div>
+                <div class="Tab-about-main-content-content">
+                    <h2>Kimim Ya ben?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum ligula id blandit congue. Suspendisse non imperdiet leo. Proin ac elit urna. Donec nec scelerisque ipsum. Praesent pulvinar pulvinar sem non vulputate. Donec vel convallis tortor. In molestie orci nec dignissim mattis. Nullam at ex vel magna tempor dapibus a ut purus. Quisque rutrum risus sit amet consequat auctor. Donec at lectus sed metus molestie sollicitudin. Nulla gravida tortor ex, at finibus lectus malesuada sed.
+                        </p>
+                        <p>
+                            Quisque tortor sapien, lacinia ac ante sed, pharetra pharetra lacus. Praesent non diam rhoncus, fringilla turpis in, suscipit lectus. Donec dictum ligula vel neque vehicula, ac consectetur libero semper. Sed auctor sem et eleifend tristique. Proin commodo convallis justo quis sagittis. Curabitur condimentum libero id lectus vestibulum, quis euismod odio mollis. Integer a porttitor leo. Nam porttitor, massa vitae fringilla fringilla, eros dui tincidunt lorem, et maximus nisi ligula eu lorem.
+                        </p>
+                </div>
+            </div>
+        </div>
+       <!--Project-tab -->
+        <div class="Tab-Projects" id="ProjectDiv" hidden onclick="up('project')">
+            <div class="Tab-Projects-Sidebar" id="ProjectDiv-Sidebar">
+                <div class="Tab-Projects-Sidebar-main-buttons" onclick="dropdown('deskmenu')"><img src="/img/icons/dekstop.png" alt="">
+                    <span class="">Desktop</span>
+                    <div class="Tab-Projects-Sidebar-main-buttons-caret" id="caretdeskmenu"></div>
+                </div>
+                <ul class="Tab-Projects-Sidebar-buttons" id="deskmenu"> 
+                    <li onclick="wrong()"><img src="/img/icons/dekstop.png" alt=""><a href="#" >This Pc</a></li>
+                    <li onclick="showProject()"><img src="/img/icons/directory_open.png" alt="">Project</li>
+                    <li onclick="trash()"><img src="/img/icons/trash-can.png">Trash Can</li>
+                </ul>
+                <div class="Tab-Projects-Sidebar-main-buttons" onclick="dropdown('projectmenu')">
+                    <img src="/img/icons/directory.png" alt="">
+                    <span class="">Project</span>
+                    <div class="Tab-Projects-Sidebar-main-buttons-caret" id="caretprojectmenu"></div>
+                </div>
+                <ul class="Tab-Projects-Sidebar-buttons" id="projectmenu">
+                    <li onclick="YouHere()"><img src="img/icons/directory.png" alt="">Portfolio</li>
+                    <li onclick="postit()"><img src="img/icons/directory_open.png" alt="">Post-iT</li>
+                </ul>
+                <div class="Tab-Projects-Sidebar-main-buttons" onclick="trash()"><img src="/img/icons/trash-can.png" onclick="dropdown('trashcan')">
+                    <span class="">Trash Can</span>
+                </div>  
+            </div>
+            <!--Trash Content-->
+            <div class="Tab-Projects-Trash" id="Trash" onclick="deleted()">
+                <div class="Tab-Projects-Trash-item_one">
+                    <img src="/img/icons/directory_open_blue.png">
+                    <center><span>My old life</span></center>
+                    
+                </div>
+                <div class="Tab-Projects-Trash-item_two" onclick="deleted()">
+                    <img src="/img/icons/calendar.png">
+                    <span>Kaybolan Yıllarım</span>
+                </div>
+            </div>
+            <!--Project Content-->
+            <div class="Tab-Projects-project" id="Project-Content">
+                <div class="Tab-Projects-project-item_one" onclick="YouHere()" >
+                    <img src="/img/icons/directory.png">
+                    <center><span>Port..</span></center>
+                    
+                </div>
+                <div class="Tab-Projects-project-item_two" onclick="postit()">
+                    <img src="/img/icons/directory_open.png">
+                    <span>Post-iT</span>
+                </div>
+            </div>
+            <!--Post-it Content-->
+            <div class="Tab-Projects-postit" id="postit">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/img/post-it-one.png" style="width:100%; border-radius:15px;">
+                    <div class="text">...</div>
+                    </div>
+  
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/img/post-it-two.png" style="width:100%; border-radius:15px;">
+                    <div class="text">...</div>
+                    </div>
+  
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/img/post-it-three.png" style="width:100%; border-radius:15px;">
+                    <div class="text">...</div>
+                    </div>
+    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+  <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+                <form action="https://github.com/yunusdagdlen/Portfolio/tree/master" class="Tab-Projects-postit-form">
+                    <button class='Tab-Projects-postit-form-info' id="postit-info" >Look at the source code.</button>
+                </form>
+            <!---->
+            <div class="Tab-about-header" id="ProjectDivHeader" hidden>
+                <button class="Tab-about-header-button" onclick="hideProject()">
+                    <svg class="Tab-about-header-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+                    </svg>
+                </button>
+                
+                <div class="Tab-Projects-header-textbox">
+                    <p class="Tab-Projects-header-textbox-text">File Explorer</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Taskbar-->
+        <div class="Screen-taskbar">
+
+            <!--Start-->
+            <div class="Screen-taskbar-buttons-start" onclick="closeAll()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="power-icon" viewBox="0 0 512 512">
+                    <path class="power-icon-fill"
+                          d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"/>
+                </svg>
+                <span class="Screen-taskbar-buttons-start-text"></span>
+            </div>
+            <!--About-->
+            <div class="Screen-taskbar-buttons-about" onclick="showAbout()">
+                <img class="Screen-taskbar-buttons-about-icon" src="img/icons/explorer.png" alt="bla bla bla">
+                <span class="Screen-taskbar-buttons-about-text">About Me</span>
+            </div>
+            <!--Project-->
+            <button class="Screen-taskbar-buttons-project" onclick="showProject()">
+                <img src="img/icons/directory_open.png" alt="">
+                Projects
+            </button>
+            <!--Contact-->
+            <button class="Screen-taskbar-buttons-contact" onclick="showContact()">
+                <img src="img/icons/phone.png" alt="">
+                Contact
+            </button>
+            <!--Date-->
+            <div class="Screen-taskbar-buttons-date">
+                <span id="Clock" class="Screen-taskbar-buttons-date-clock">--:--</span>
+                <span id="date" class="Screen-taskbar-buttons-date-clock">--:--:--</span>
+            </div>          
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous"></script>
+<script src="js/moment.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function showTime() {
+        setInterval(function () {
+            clock = moment().format('hh:mm a')
+            date = moment().format('DD/MM/YY')
+            $('#Clock').text(clock)
+            $('#date').text(date)
+        }, 1000)
+    }
+
+    function showAbout() {
+        $('#aboutDiv').css("visibility", "visible");
+        $('#aboutDiv').css("z-index", "5");
+
+    }
+
+    function hideAbout() {
+        $('#aboutDiv').css("visibility", "hidden");
+        $('#aboutDiv').css("z-index", "-5");
+    }
+
+    function showContact() {
+        $('#contactDiv').css("visibility", "visible");
+        $('#contactDiv').css("z-index", "5");
+
+    }
+
+    function hideContact() {
+        $('#contactDiv').css("visibility", "hidden");
+        $('#contactDiv').css("z-index", "-5");
+    }
+
+    function showProject() {
+        $('#ProjectDiv').css("visibility", "visible");
+        $('#ProjectDiv').css("z-index", "5");
+        $('#projectmenu').css("display","");
+        $('#caretprojectmenu').css("transform","rotate(-90deg)")
+        $('#Trash').css("visibility", "hidden");
+        $('#Project-Content').css("display", "");
+        $('#postit').css("display","none")
+        $('#postit-info').css('display','none');
+    }
+    function hideProject() {
+        $('#ProjectDiv').css("visibility", "hidden");
+        $('#ProjectDiv').css("z-index", "-5");
+        $('Trash').css("visibility", "hidden");
+        $('#Trash').css("visibility", "hidden");
+    }
+
+
+    function closeAll(){
+        $('#ProjectDiv').css("visibility", "hidden");
+        $('#ProjectDiv').css("z-index", "-5");
+        $('#aboutDiv').css("visibility", "hidden");
+        $('#aboutDiv').css("z-index", "-5");
+        $('#contactDiv').css("visibility", "hidden");
+        $('#contactDiv').css("z-index", "-5");
+    }
+
+        $('#deskmenu').css("display","none");
+        $('#projectmenu').css("display","none");
+        status='off'    
+        function dropdown(id){
+         if (status=='off')
+         {
+            $('#'+id).css("display","");
+            $('#caret'+id).css("transform","rotate(-90deg)")
+            status='on';
+         }
+         else
+         {
+         $('#'+id).css("display","none");
+         $('#caret'+id).css("transform","rotate(0deg)")
+         status='off';
+         }
+         return status;
+    }
+
+    function postit(){
+        $('#postit').css("display","")
+        $('#Project-Content').css("display", "none");
+        $('#Trash').css('display','none');
+        $('#postit-info').css('display','');
+        
+    }
+
+    function up(id){
+        $('#aboutDiv').css('z-index','1')
+        $('#ProjectDiv').css('z-index','1')
+        $('#contactDiv').css('z-index','1')
+        $('#'+id).css("z-index","5")
+    }
+    function wrong(){
+        Swal.fire(
+            'Authorization Fail',
+            '',
+            'error'
+        )    
+    }
+    function trash(){
+
+        $('#Trash').css("visibility", "visible");
+        $('#Trash').css("display", "");
+        $('#postit').css("display","none")
+        $('#Project-Content').css("display", "none");
+        $('#postit-info').css('display','none');
+        
+
+    }
+
+    function deleted(){
+        Swal.fire(
+            'Deleted',
+            '',
+            'error'
+        )    
+    }
+
+    function YouHere(){
+        Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'You Here!',
+        footer: '<a href="https://github.com/yunusdagdlen/Portfolio">Would you like to look at the source code?</a>'
+})
+    }
+
+</script>
+</body>
+</html>

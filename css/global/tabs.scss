@@ -1,0 +1,542 @@
+@media only screen and (max-width: 1620px) {
+  #aboutDiv{
+    width: 800px;
+    overflow-y: auto;
+  }
+  #ProjectDiv{
+    width: 800px;
+  }
+  #ProjectDiv-Sidebar{
+    width: 300px;
+  }
+  #aboutDivHeader{
+    border-top-right-radius: 0px;
+  }
+  }
+  
+  @media only screen and (min-width: 2000px) {
+    #aboutDiv{
+      width: 1920px;
+      overflow-y: auto;
+    }
+    #ProjectDiv{
+      width: 1920px;
+      height: 1000px;
+    }
+    #ProjectDiv-Sidebar{
+      width: 700px;
+      height:96%;
+    }
+    #aboutDivHeader{
+      border-top-right-radius: 0px;
+    }
+    #Project-Content{
+      position: relative;
+      left: 400px;
+    }
+    #Trash{
+      position: relative;
+      left: 400px;
+    }
+    #postit{
+      position: absolute;
+      left: 750px;
+    }
+    #Screen{
+      width: 2500px;
+      height: 1224px;
+    }
+    .Screen{
+      margin-top: 0.2vh;
+    }
+  }
+
+
+
+
+
+
+.Tab-about {
+  display: flex;
+  background: rgba(239, 233, 228);
+  width: 1220px;
+  height: 680px;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid $taskbar-blue;
+  visibility: hidden;
+
+  &-header {
+    display: flex;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    z-index: 20;
+    background: rgba(50, 50, 50, 0.76);
+    position: absolute;
+
+    &-tab {
+      display: inline-flex;
+      position: absolute;
+      width: 172px;
+      height: 33px;
+      top: 7px;
+      left: 12px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background: rgba(50,50,50,0.8);
+      &-text{
+        font-family: $font;
+        color: $white;
+        margin: auto;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      border-radius: 5px;
+      background: red;
+      box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+      top: 5px;
+      right: 15px;
+      float: right;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: auto;
+      width: 29px;
+      height: 29px;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 23px;
+        height: 27px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+      }
+    }
+  }
+&-main-content{
+
+  margin-top: 40px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width:100%;
+  height:637px;
+  display: inline-flex;
+
+  &-profilePhoto{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    height: 188px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: pink;
+  
+  }
+    
+  &-skills{
+    padding:$gutter;  
+    position: absolute;
+    border-radius: 15px;
+    top: 300px;
+    left: 50px;
+    background-color: rgba(220,220,220,0.2);
+    height: auto;
+    width: 188px;
+  }
+
+  &-content{
+    z-index: 2;
+    font-family: $font;
+    margin-top: 50px;
+    margin-left: 120px;
+
+    & p{
+      position: relative;
+      top:20px;
+    }
+
+  }
+}
+/**/
+}
+.Tab-Projects {
+  display: flex;
+  background: rgba(239, 233, 228);
+  width: 1220px;
+  height: 680px;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid $taskbar-blue;
+  visibility: hidden;
+
+
+  &-header {
+    display: flex;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    z-index: 20;
+    background: rgba(50, 50, 50, 0.76);
+
+    &-textbox{
+      display: inline-flex;
+      position: absolute;
+      top: 7px;
+      left: 12px;
+      &-text{
+        align-items: center;
+        font-family: $font;
+        font-size: 16px;
+        color: $white;
+        margin-top: 4px;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      border-radius: 5px;
+      background: red;
+      box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+      top: 5px;
+      right: 15px;
+      float: right;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: auto;
+      width: 29px;
+      height: 29px;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 23px;
+        height: 27px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+      }
+    }
+  }
+  &-Sidebar{
+    float: left;
+    background-color: $side-color;
+    height: 100%;
+    height: 94.1%;
+    width: 26%;
+    z-index: -1;
+    margin-top: 40px;
+    position: absolute;
+    border-bottom-left-radius: 14px;
+    padding-top: $gutter;
+
+    &-buttons{
+      font-family: $font; 
+      align-items: center;
+      margin: $gutter;
+      margin-left: 50px;
+
+    }
+    
+    &-main-buttons{
+      font-family: $font;
+      margin-top: $gutter;
+      margin-left: $gutter;
+      margin-bottom: $gutter;
+      align-items: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: auto;
+      height: auto;
+
+      
+      &:hover{
+        background-color: $sidebar-button;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+
+      & img{
+        margin-left: $gutter;
+      }
+      &-caret{
+        width: 2px;
+        height: 2px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid gray;
+        transition: 0.3s;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: auto;
+        float: right;
+        vertical-align: middle;
+        margin-right: 40px;
+
+        
+      }
+    }
+    & ul li{
+      margin: $gutter;
+      cursor: pointer;
+      margin-top: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+    }
+    & ul li a{
+      text-decoration: none;
+      color: black;
+    }
+    & ul li:hover{
+      background-color: $sidebar-button;
+      border-radius: 15px;
+    }
+    & ul li img{
+      margin-right: $gutter;
+    }
+    & span span{
+      margin-left: $gutter;
+    }
+    
+  }
+  &-Trash{
+
+    &-item_one{
+      position: absolute;
+      left: 350px;
+      top: 70px;
+      cursor: pointer;
+
+      & img{
+        width: 70px;
+        height: 70px;
+      }
+      & span{
+        position: absolute;
+        top: 80px;
+        left: 10px;
+      }
+    }
+    &-item_two{
+      position: absolute;
+      left: 480px;
+      top: 70px;
+      cursor: pointer;
+
+      & img{
+        width: 70px;
+        height: 70px;
+      }
+      & span{
+        position: absolute;
+        top: 90px;
+        left: -20px;
+      }
+
+    }
+  }
+  &-project{
+
+    &-item_one{
+      position: absolute;
+      left: 350px;
+      top: 70px;
+
+      & img{
+        width: 70px;
+        height: 70px;
+      }
+      & span{
+        position: absolute;
+        top: 80px;
+        left: 0px;
+      }
+    }
+    &-item_two{
+      position: absolute;
+      left: 480px;
+      top: 70px;
+
+
+      & img{
+        width: 70px;
+        height: 70px;
+      }
+      & span{
+        position: absolute;
+        top: 90px;
+        left: 0px;
+      }
+
+    }
+  }
+  &-postit{
+    position: relative;
+    top: 80px;
+    left: 376.5px;
+    right: 50px;
+    border-radius: 15px;
+
+    &-form{
+      position: relative;
+      top: 800px;
+      left: 1077.5px;
+
+      &-info{
+        
+        position: relative;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 15px;
+        background-color:  rgba(51, 51, 51, 0.8);
+      
+        &:hover{
+          background-color: rgba(51,51,51,1);
+          color: white;
+        }
+        
+  
+      }
+    }
+
+
+  }
+
+}
+
+.Tab-contact{
+  display: flex;
+  background: rgba(239, 233, 228);
+  width: 581px;
+  height: 680px;
+  position: absolute;
+  left:60%;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid $taskbar-blue;
+  visibility: hidden;
+
+  &-header {
+    display: flex;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    z-index: 20;
+    background: rgba(50, 50, 50, 0.76);
+    position: absolute;
+
+    &-textbox{
+      display: inline-flex;
+      position: absolute;
+      top: 7px;
+      left: 12px;
+      &-text{
+        align-items: center;
+        font-family: $font;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 4px;
+      }
+    }
+
+    &-tab {
+      display: inline-flex;
+      position: absolute;
+      width: 172px;
+      height: 33px;
+      top: 7px;
+      left: 12px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background: rgba(50,50,50,0.8);
+      &-text{
+        font-family: $font;
+        color: $white;
+        margin: auto;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      border-radius: 5px;
+      background: red;
+      box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+      top: 5px;
+      right: 15px;
+      float: right;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: auto;
+      width: 29px;
+      height: 29px;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 23px;
+        height: 27px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+      }
+    }
+  }
+  &-content{
+    position: absolute;
+    top:40px; 
+    align-items: center;
+    padding: 120px;
+
+    & input{
+      margin-top: 5px;
+      height: 30px;
+      border: 0px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    & textarea{
+      margin-top: 5px;
+      border-radius: 15px;
+      border:0px
+      overflow 
+    }
+
+    & button{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
