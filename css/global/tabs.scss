@@ -12,6 +12,13 @@
   #aboutDivHeader{
     border-top-right-radius: 0px;
   }
+  #postit{
+    display: none;
+  }
+  #contactDiv{
+    left:30%;
+  }
+
   }
   
   @media only screen and (min-width: 2000px) {
@@ -53,7 +60,9 @@
 
 
 
-
+#textarea{
+  height: 300px;
+}
 
 
 .Tab-about {

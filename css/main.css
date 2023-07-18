@@ -628,6 +628,12 @@ body {
   #aboutDivHeader {
     border-top-right-radius: 0px;
   }
+  #postit {
+    display: none;
+  }
+  #contactDiv {
+    left: 30%;
+  }
 }
 @media only screen and (min-width: 2000px) {
   #aboutDiv {
@@ -665,6 +671,10 @@ body {
     margin-top: 0.2vh;
   }
 }
+#textarea {
+  height: 300px;
+}
+
 .Tab-about {
   display: flex;
   background: rgb(239, 233, 228);
