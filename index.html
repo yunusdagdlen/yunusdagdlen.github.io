@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Who is am</title>
+    <title>Who am I</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -180,7 +180,7 @@
                 </button>
                 
                 <div class="Tab-Projects-header-textbox">
-                    <p class="Tab-Projects-header-textbox-text">File Explorer</p>
+                    <p class="Tab-Projects-header-textbox-text" id="ex-id">File Explorer</p>
                 </div>
             </div>
         </div>
@@ -310,6 +310,7 @@
         $('#Project-Content').css("display", "none");
         $('#Trash').css('display','none');
         $('#postit-info').css('display','');
+        $('#ex-id').text('File Explorer'+'/Project/Postit')
         
     }
 
@@ -333,6 +334,7 @@
         $('#postit').css("display","none")
         $('#Project-Content').css("display", "none");
         $('#postit-info').css('display','none');
+        $('#ex-id').text('File Explorer'+'/Trash Can')
         
 
     }
@@ -353,6 +355,8 @@
         footer: '<a href="https://github.com/yunusdagdlen/Portfolio">Would you like to look at the source code?</a>'
 })
     }
+
+
 
 </script>
 </body>
