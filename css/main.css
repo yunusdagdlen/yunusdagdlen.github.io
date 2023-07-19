@@ -628,11 +628,19 @@ body {
   #aboutDivHeader {
     border-top-right-radius: 0px;
   }
-  #postit {
-    display: none;
-  }
   #contactDiv {
     left: 30%;
+  }
+  #postit-form {
+    top: 400px;
+    left: 320px;
+  }
+  .slideshow-container {
+    top: 70px;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -669,6 +677,10 @@ body {
   }
   .Screen {
     margin-top: 0.2vh;
+  }
+  #postit-form {
+    top: 800px;
+    left: 1077.5px;
   }
 }
 #textarea {
@@ -973,16 +985,16 @@ body {
   left: 0px;
 }
 .Tab-Projects-postit {
-  position: relative;
+  position: absolute;
   top: 80px;
   left: 376.5px;
-  right: 50px;
+  right: 60px;
   border-radius: 15px;
 }
 .Tab-Projects-postit-form {
-  position: relative;
-  top: 800px;
-  left: 1077.5px;
+  position: absolute;
+  top: 550px;
+  left: 536px;
 }
 .Tab-Projects-postit-form-info {
   position: relative;

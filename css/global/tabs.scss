@@ -12,12 +12,23 @@
   #aboutDivHeader{
     border-top-right-radius: 0px;
   }
-  #postit{
-    display: none;
-  }
   #contactDiv{
     left:30%;
   }
+      #postit-form{
+      top: 400px;
+      left: 320px;
+    }
+
+
+    .slideshow-container {
+      top: 70px;
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+      border-radius: 15px;
+    }
+
 
   }
   
@@ -56,14 +67,16 @@
     .Screen{
       margin-top: 0.2vh;
     }
+    #postit-form{
+      top: 800px;
+      left: 1077.5px;
+    }
   }
-
 
 
 #textarea{
   height: 300px;
 }
-
 
 .Tab-about {
   display: flex;
@@ -401,16 +414,17 @@
     }
   }
   &-postit{
-    position: relative;
+    position: absolute;
     top: 80px;
     left: 376.5px;
-    right: 50px;
+    right: 60px;
     border-radius: 15px;
 
     &-form{
-      position: relative;
-      top: 800px;
-      left: 1077.5px;
+      position: absolute;
+      top: 550px;
+      left: 536px;
+
 
       &-info{
         

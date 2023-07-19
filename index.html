@@ -96,7 +96,7 @@
                 </div>
                 <ul class="Tab-Projects-Sidebar-buttons" id="deskmenu"> 
                     <li onclick="wrong()"><img src="/img/icons/dekstop.png" alt=""><a href="#" >This Pc</a></li>
-                    <li onclick="showProject()"><img src="/img/icons/directory_open.png" alt="">Project</li>
+                    <li onclick="showTabProject()"><img src="/img/icons/directory_open.png" alt="">Project</li>
                     <li onclick="trash()"><img src="/img/icons/trash-can.png">Trash Can</li>
                 </ul>
                 <div class="Tab-Projects-Sidebar-main-buttons" onclick="dropdown('projectmenu')">
@@ -140,7 +140,7 @@
             <div class="Tab-Projects-postit" id="postit">
 
                 <!-- Slideshow container -->
-                <div class="slideshow-container">
+                <div class="slideshow-container" id="slideshow-container">
     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
@@ -171,8 +171,7 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-
-                <form action="https://github.com/yunusdagdlen/Portfolio/tree/master" class="Tab-Projects-postit-form">
+                <form action="https://github.com/yunusdagdlen/Portfolio/tree/master" class="Tab-Projects-postit-form" id="postit-form">
                     <button class='Tab-Projects-postit-form-info' id="postit-info" >Look at the source code.</button>
                 </form>
             <!---->
@@ -242,21 +241,49 @@
         }, 1000)
     }
 
+
+        statusAbout=false
     function showAbout() {
-        $('#aboutDiv').css("visibility", "visible");
-        $('#aboutDiv').css("z-index", "5");
+        
+        if(statusAbout==false){
+            $('#aboutDiv').css("visibility", "visible");
+            $('#aboutDiv').css("z-index", "5");
+            $('#contactDiv').css("z-index", "4");
+            $('#ProjectDiv').css("z-index", "4");
+            statusAbout=true
+        }
+        else if(statusAbout==true){
+            $('#aboutDiv').css("visibility", "hidden");
+            $('#aboutDiv').css("z-index", "-5");
+            statusAbout=false
+        }
+        return statusAbout
 
     }
 
     function hideAbout() {
         $('#aboutDiv').css("visibility", "hidden");
         $('#aboutDiv').css("z-index", "-5");
+        var statusAbout=1
+        return statusAbout
     }
 
+    statusContact=false
     function showContact() {
-        $('#contactDiv').css("visibility", "visible");
-        $('#contactDiv').css("z-index", "5");
 
+        if(statusContact==false){
+            $('#contactDiv').css("visibility", "visible");
+            $('#contactDiv').css("z-index", "5");
+            $('#aboutDiv').css("z-index", "4");
+            $('#ProjectDiv').css("z-index", "4");
+            statusContact=true
+        }
+        else if(statusContact==true){
+            $('#contactDiv').css("visibility", "hidden");
+            $('#contactDiv').css("z-index", "-5");
+            statusContact=false
+        }
+        return statusContact
     }
 
     function hideContact() {
@@ -264,7 +291,9 @@
         $('#contactDiv').css("z-index", "-5");
     }
 
-    function showProject() {
+
+    function showTabProject()
+    {
         $('#ProjectDiv').css("visibility", "visible");
         $('#ProjectDiv').css("z-index", "5");
         $('#projectmenu').css("display","");
@@ -273,6 +302,38 @@
         $('#Project-Content').css("display", "");
         $('#postit').css("display","none")
         $('#postit-info').css('display','none');
+        $('#ex-id').text('File Explorer'+'/Project')
+        $('#contactDiv').css("z-index", "4");
+        $('#aboutDiv').css("z-index", "4");
+
+    }
+
+    statusProject=false
+
+    function showProject() {
+        if(statusProject==false){
+        $('#ProjectDiv').css("visibility", "visible");
+        $('#ProjectDiv').css("z-index", "5");
+        $('#projectmenu').css("display","");
+        $('#caretprojectmenu').css("transform","rotate(-90deg)")
+        $('#Trash').css("visibility", "hidden");
+        $('#Project-Content').css("display", "");
+        $('#postit').css("display","none")
+        $('#postit-info').css('display','none');
+        $('#ex-id').text('File Explorer'+'/Project')
+        $('#contactDiv').css("z-index", "4");
+        $('#aboutDiv').css("z-index", "4");
+        statusProject=true
+    }
+    else if(statusProject==true){
+        $('#ProjectDiv').css("visibility", "hidden");
+        $('#ProjectDiv').css("z-index", "-5");
+        $('Trash').css("visibility", "hidden");
+        $('#Trash').css("visibility", "hidden");
+        statusProject=false
+    }
+    return statusProject
+
     }
     function hideProject() {
         $('#ProjectDiv').css("visibility", "hidden");
@@ -346,8 +407,8 @@
 
     function deleted(){
         Swal.fire(
-            'Deleted',
-            '',
+            'Unfortunately',
+            'not recyclable',
             'error'
         )    
     }
