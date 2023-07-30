@@ -303,8 +303,8 @@
       &-caret{
         width: 2px;
         height: 2px;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
         border-right: 10px solid gray;
         transition: 0.3s;
         display: inline-flex;
@@ -560,6 +560,27 @@
       border-radius: 15px;
       width: 200px;
       height: 60px;
+    }
+  }
+}
+.Desktop{
+  position: absolute;
+
+  &-ThisPc{
+    position: absolute;
+    width: max-content;
+    left: 5vh;
+    top: 5vh;
+
+    & img{
+      width: 100px;
+      height: 100px;
+    }
+    & a{
+      text-decoration: none;
+      color: aliceblue;
+      margin-top: 10px;
+      display: flex;
     }
   }
 }

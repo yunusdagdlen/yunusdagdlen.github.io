@@ -892,8 +892,8 @@ body {
 .Tab-Projects-Sidebar-main-buttons-caret {
   width: 2px;
   height: 2px;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
   border-right: 10px solid gray;
   transition: 0.3s;
   display: inline-flex;
@@ -1112,6 +1112,26 @@ body {
   border-radius: 15px;
   width: 200px;
   height: 60px;
+}
+
+.Desktop {
+  position: absolute;
+}
+.Desktop-ThisPc {
+  position: absolute;
+  width: max-content;
+  left: 5vh;
+  top: 5vh;
+}
+.Desktop-ThisPc img {
+  width: 100px;
+  height: 100px;
+}
+.Desktop-ThisPc a {
+  text-decoration: none;
+  color: aliceblue;
+  margin-top: 10px;
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */
